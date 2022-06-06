@@ -1,4 +1,4 @@
-.todo {
+.todo{
     border: 1px solid lightgray;
     padding: .5rem;
     width: fit-content;
@@ -9,20 +9,18 @@
     transition: all .5s ease;
 }
 
-.upcoming {
-    background-color: lightcoral;
+.completed{
+    background-color: lightgreen;
 }
-
-.upcoming:hover {
+.completed:hover{
     background-color: aliceblue;
     border-radius: 16px;
 }
 
-.completed {
-    background-color: darkturquoise;
+.upcoming{
+    background-color: lightcoral;
 }
-
-.completed:hover {
-    background-color: aquamarine;
+.upcoming:hover{
+    background-color: aliceblue;
     border-radius: 16px;
 }

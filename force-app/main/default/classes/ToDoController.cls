@@ -54,7 +54,7 @@ public class ToDoController {
     return getToDos(todos);
   }
 
-  //Get all todos for today
+  //Get all todos for today, to display on frontend. Query database and sent to HTML
   @AuraEnabled
   public static List<ToDo> getCurrentTodos() {
     List<SObject> todos = Database.query(
