@@ -118,19 +118,19 @@ export default class ToDoManager extends LightningElement {
     populateTodoList(){
         const todoList = [
             {todoId: 0,
-                todoName: "Eat Vegan",
-                done: false,
-                todoDate: new Date()
+            todoName: "Eat Vegan",
+            done: false,
+            todoDate: new Date()
             },
             {todoId: 1,
-                todoName: "Watch Korean Drama",
-                done: false,
-                todoDate: new Date()
+            todoName: "Watch Korean Drama",
+            done: false,
+            todoDate: new Date()
             },
             {todoId: 2,
-                todoName: "Sleep",
-                done: true,
-                todoDate: new Date()
+            todoName: "Sleep",
+            done: true,
+            todoDate: new Date()
             }
         ];
         this.todoList = todoList;
