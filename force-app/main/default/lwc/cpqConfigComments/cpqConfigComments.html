@@ -1,3 +1,15 @@
 <template>
-    
+    <div class="slds-box slds-theme_default">
+    <lightning-accordion class="example-accordion" onsectiontoggle={handleToggleSection}  allow-multiple-sections-open	>
+        <lightning-accordion-section name="Internal Comments" label="Internal Comments">
+            <!--INTERNAL CHILD COMMENT COMPONENT-->
+            <c-cpq-config-child-comment></c-cpq-config-child-comment>
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="External Comments" label="External Comments">
+           <!--EXTERNAL CHILD COMMENT COMPONENT-->
+           <c-cpq-config-child-comment></c-cpq-config-child-comment>
+        </lightning-accordion-section>
+    </lightning-accordion>
+</div>
 </template>

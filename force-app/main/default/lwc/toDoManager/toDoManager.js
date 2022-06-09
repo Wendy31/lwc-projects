@@ -70,7 +70,7 @@ export default class ToDoManager extends LightningElement {
         // catch() handles error 
         addTodo({payload : JSON.stringify(todoObj)}).then((response) =>{
             // log the successful response
-            console.log("Todo item is insterted successfully");
+            console.log("Todo item is inserted successfully");
             this.fetchTodoList(); // call method everytime an item is added successfully so it can be displayed in todo list
         }).catch((error) => {
             // log the error
