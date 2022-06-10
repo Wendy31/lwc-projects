@@ -7,7 +7,7 @@
                         <ul aria-label="Format text" class="slds-button-group-list">
                             <li>
                                 <button class="slds-button slds-button_icon slds-button_icon-border-filled"
-                                    tabindex="0" onclick={format} value="bold" >
+                                    tabindex="0" >
                                     <lightning-icon icon-name="utility:bold" size="xx-small"></lightning-icon>
                                     <span class="slds-assistive-text" >Bold</span>
                                 </button>
@@ -82,4 +82,13 @@
             </div>
         </div>
     </div>
+
+
+    <lightning-input-rich-text
+        value={myVal}
+        onchange={handleChange}>
+    </lightning-input-rich-text>
+
+    <lightning-formatted-rich-text value={myVal}></lightning-formatted-rich-text>
+    
 </template>
