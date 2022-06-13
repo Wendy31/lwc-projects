@@ -6,6 +6,7 @@ export default class List extends LightningElement {
 
     handleTileClick(evt) {
         // This component wants to emit a productselected event to its parent
+        // use custom event to fire event to parent 
         const event = new CustomEvent('productselected', {
             detail: evt.detail
         });

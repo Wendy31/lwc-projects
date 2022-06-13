@@ -7,14 +7,4 @@ export default class CpqConfigComments extends LightningElement {
         this.activeSectionMessage =
             'Open section name:  ' + event.detail.openSections;
     }
-
-    
-
-    /*
-    handleSetActiveSectionC() {
-        const accordion = this.template.querySelector('.example-accordion');
-
-        accordion.activeSectionName = 'C';
-    }
-    */
 }

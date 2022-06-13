@@ -1,19 +1,10 @@
-import { LightningElement, track } from 'lwc';
+import { LightningElement, api } from 'lwc';
 
 export default class CpqConfigChildComment extends LightningElement {
-    myVal = '<b>Hello!</b>';
-
-    connectedCallback(){
-        //this.format(value);
-       // this.handleChange(e);
-    }
-
-   /* format(value) {
-        this.template.execCommand(command, showUI, value);
-    } 
-    */
+   commentValue;
 
     handleChange(event) {
-        this.myVal = event.target.value;
+        this.commentValue = event.target.value;
+        console.log("Internal Comment: " + this.commentValue);
     }
 }
