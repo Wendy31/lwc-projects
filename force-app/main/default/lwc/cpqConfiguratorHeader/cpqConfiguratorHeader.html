@@ -53,7 +53,8 @@
 
 
           <div class="slds-col slds-size_1-of-2">
-            <div class="slds-media__body">
+            
+            <!--OPP DETAILS <div class="slds-media__body">
 
               <ul class="slds-list_horizontal slds-wrap">
                 <li class="slds-item_label slds-text-color_weak slds-truncate">
@@ -91,7 +92,37 @@
                     Opportunity Project - ABC</div>
                 </li>
               </ul>
-            </div>
+            </div> OPP DETAILS-->
+
+
+
+
+            <lightning-layout multiple-rows>
+              <lightning-layout-item size="12" 
+                   small-device-size="6"
+                   padding="around-small">
+                   <p>Client: </p><p>Account ABC</p>
+                   <p>Product</p>
+                   <p>Manufacturer</p>
+                   <p>Quantity</p>
+               </lightning-layout-item>
+               <lightning-layout-item size="6"
+                   small-device-size="3"
+                   padding="around-small">
+                   <p>Opp Name: </p>
+                   <p>Opp Project: </p>
+                  <div class="slds-list_horizontal slds-wrap"><p>Opp Stage: </p><p>Negotiation</p> </div> 
+
+                  <div class="slds-grid slds-grid_pull-padded-medium">
+                    <div class="slds-col slds-p-horizontal_medium slds-max-medium-size_1-of-1 slds-max-small-size_1-of-1">
+                      <span>Opp Name: </span>
+                    </div>
+                    <div class="slds-col slds-p-horizontal_medium slds-max-medium-size_1-of-1 slds-max-small-size_1-of-1">
+                      <span>Opp - ABC</span>
+                    </div>
+                  </div>
+               </lightning-layout-item>
+           </lightning-layout>
 
 
           </div>
