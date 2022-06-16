@@ -1,0 +1,39 @@
+.wrapped-content{
+    overflow-wrap: break-word;
+}
+
+ul {
+    display: flex;    
+    
+}
+
+ul li {
+    /*this instruction means "To split space between all 'li' elements evenly*/
+    flex: 1;
+}
+
+.flex-prod-opp-container{
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .flex-prod-opp-container {
+      flex-direction: column-reverse;
+    }
+    .flex-prod-container{
+        padding-left: 3rem;
+        padding-top: 3rem;;
+    }
+  }
+
+
+
+.flex-icon-opp-container {
+    display: flex;
+  }
+  
+  @media (max-width: 600px) {
+    .flex-icon-opp-container {
+      flex-direction: row;
+    }
+  }

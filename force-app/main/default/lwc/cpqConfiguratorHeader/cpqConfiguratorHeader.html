@@ -1,133 +1,120 @@
 <template>
-  <div class="slds-container_fluid">
+  <div
+    class="slds-container_fluid slds-container_medium slds-container_right slds-size_12-of-12 slds-max-medium-size_1-of-1 slds-max-small-size_1-of-1">
     <div class="slds-page-header">
-      <div class="slds-media">
-        <div class="slds-grid slds-p-left_small slds-has-flexi-truncate">
-          <div class="slds-col slds-size_1-of-2">
-            <ul class="slds-list_horizontal slds-wrap">
-              <li class="slds-item_label slds-text-color_weak slds-truncate">
-                <div class="slds-truncate" title="Product">Product:</div>
-              </li>
-              <li class="slds-item_label slds-text-color_weak slds-truncate">
-                <div class="slds-truncate" title="Description (2-line truncation—must use JS to truncate).">Product Name:</div>
-              </li>
-            </ul>
-            <ul class="slds-list_horizontal slds-wrap">
-              <li class="slds-item_label slds-text-color_weak slds-truncate">
-                <div class="slds-truncate" title="Field 4">Opportunity Project:</div>
-              </li>
-              <li class="slds-item_label slds-text-color_weak slds-truncate">
-                <div class="slds-truncate" title="Description (2-line truncation—must use JS to truncate).">Opportunity
-                  Project - ABC</div>
-              </li>
-            </ul>
-            <ul class="slds-list_horizontal slds-wrap">
-              <li class="slds-item_label slds-text-color_weak slds-truncate">
-                <div class="slds-truncate" title="Field 4">Opportunity Stage:</div>
-              </li>
-              <li class="slds-item_label slds-text-color_weak slds-truncate">
-                <div class="slds-truncate" title="Description (2-line truncation—must use JS to truncate).">Opportunity
-                  Project - ABC</div>
-              </li>
-            </ul>
-            <ul class="slds-list_horizontal slds-wrap">
-              <li class="slds-item_label slds-text-color_weak slds-truncate">
-                <div class="slds-truncate" title="Field 4">Quantity:</div>
-              </li>
-              <li class="slds-item_label slds-text-color_weak slds-truncate">
-                <div class="slds-truncate" title="Description (2-line truncation—must use JS to truncate).">
-                  <lightning-input class="slds-truncate" required value="record.quoteQuantity" label="Qty Required"
-                  max="99" min="1" type="number" name="headerQuantity" >
-                </lightning-input>
-                </div>
-              </li>
-            </ul>
-          </div>
 
-          <div class="slds-media__figure">
-            <span class="slds-icon_container slds-icon-standard-opportunity">
-              <lightning-icon icon-name="standard:opportunity" size="medium"></lightning-icon>
-              <span class="slds-assistive-text">opportunity</span>
-            </span>
-          </div>
+      <lightning-layout multiple-rows="true">
 
-
-          <div class="slds-col slds-size_1-of-2">
-            
-            <!--OPP DETAILS <div class="slds-media__body">
-
+        <!--PRODUCT DETAILS-->
+        <div class="flex-prod-opp-container">
+          <div class="flex-prod-container">
+            <lightning-layout-item flexibility="auto" class="slds-p-bottom_large">
               <ul class="slds-list_horizontal slds-wrap">
-                <li class="slds-item_label slds-text-color_weak slds-truncate">
-                  <div class="slds-truncate" title="Field 4">Opportunity Name:</div>
+                <li class="slds-item_label slds-text-color_weak ">
+                  <div class="wrapped-content" title="Product">Product:</div>
                 </li>
-                <li class="slds-item_label slds-text-color_weak slds-truncate">
-                  <div class="slds-truncate" title="Description (2-line truncation—must use JS to truncate).">
-                    Opportunity Name - ABC</div>
+                <li class="slds-item_label slds-text-color_weak ">
+                  <div class="wrapped-content" title="Description (2-line truncation—must use JS to truncate).">Product
+                    Name:</div>
                 </li>
               </ul>
               <ul class="slds-list_horizontal slds-wrap">
-                <li class="slds-item_label slds-text-color_weak slds-truncate">
-                  <div class="slds-truncate" title="Field 4">Opportunity Project:</div>
+                <li class="slds-item_label slds-text-color_weak ">
+                  <div class="wrapped-content" title="Field 4">Opportunity Project:</div>
                 </li>
-                <li class="slds-item_label slds-text-color_weak slds-truncate">
-                  <div class="slds-truncate" title="Description (2-line truncation—must use JS to truncate).">
-                    Opportunity Project - ABC</div>
-                </li>
-              </ul>
-              <ul class="slds-list_horizontal slds-wrap">
-                <li class="slds-item_label slds-text-color_weak slds-truncate">
-                  <div class="slds-truncate" title="Field 4">Opportunity Stage:</div>
-                </li>
-                <li class="slds-item_label slds-text-color_weak slds-truncate">
-                  <div class="slds-truncate" title="Description (2-line truncation—must use JS to truncate).">
-                    Opportunity Project - ABC</div>
+                <li class="slds-item_label slds-text-color_weak ">
+                  <div class="wrapped-content" title="Description (2-line truncation—must use JS to truncate).">
+                    Opportunity
+                    Project - ABC</div>
                 </li>
               </ul>
               <ul class="slds-list_horizontal slds-wrap">
-                <li class="slds-item_label slds-text-color_weak slds-truncate">
-                  <div class="slds-truncate" title="Field 4">Quote:</div>
+                <li class="slds-item_label slds-text-color_weak ">
+                  <div class="wrapped-content" title="Field 4">Opportunity Stage:</div>
                 </li>
-                <li class="slds-item_label slds-text-color_weak slds-truncate">
-                  <div class="slds-truncate" title="Description (2-line truncation—must use JS to truncate).">
-                    Opportunity Project - ABC</div>
+                <li class="slds-item_label slds-text-color_weak ">
+                  <div class="wrapped-content" title="Description (2-line truncation—must use JS to truncate).">
+                    Opportunity
+                    Project - ABC</div>
                 </li>
               </ul>
-            </div> OPP DETAILS-->
-
-
-
-
-            <lightning-layout multiple-rows>
-              <lightning-layout-item size="12" 
-                   small-device-size="6"
-                   padding="around-small">
-                   <p>Client: </p><p>Account ABC</p>
-                   <p>Product</p>
-                   <p>Manufacturer</p>
-                   <p>Quantity</p>
-               </lightning-layout-item>
-               <lightning-layout-item size="6"
-                   small-device-size="3"
-                   padding="around-small">
-                   <p>Opp Name: </p>
-                   <p>Opp Project: </p>
-                  <div class="slds-list_horizontal slds-wrap"><p>Opp Stage: </p><p>Negotiation</p> </div> 
-
-                  <div class="slds-grid slds-grid_pull-padded-medium">
-                    <div class="slds-col slds-p-horizontal_medium slds-max-medium-size_1-of-1 slds-max-small-size_1-of-1">
-                      <span>Opp Name: </span>
-                    </div>
-                    <div class="slds-col slds-p-horizontal_medium slds-max-medium-size_1-of-1 slds-max-small-size_1-of-1">
-                      <span>Opp - ABC</span>
-                    </div>
+              <ul class="slds-list_horizontal slds-wrap">
+                <li class="slds-item_label slds-text-color_weak ">
+                  <div class="wrapped-content" title="Field 4">Quantity:</div>
+                </li>
+                <li class="slds-item_label slds-text-color_weak ">
+                  <div class="" title="Description (2-line truncation—must use JS to truncate).">
+                    <lightning-input required value="record.quoteQuantity" label="Qty Required" max="99" min="1"
+                      type="number" name="headerQuantity">
+                    </lightning-input>
                   </div>
-               </lightning-layout-item>
-           </lightning-layout>
+                </li>
+              </ul>
+            </lightning-layout-item>
+          </div>
+
+          <!--ICOND-->
+          <div class="flex-opp-container">
+            <div class="flex-icon-opp-container">
+              <div class="flex-item-left">
+                <div class="slds-media__figure slds-p-left_small">
+                  <span class="slds-icon_container slds-icon-standard-opportunity">
+                    <lightning-icon icon-name="standard:opportunity" size="medium"></lightning-icon>
+                    <span class="slds-assistive-text">opportunity</span>
+                  </span>
+                </div>
+              </div>
+
+              <!--OPP DETAILS-->
+              <div class="flex-item-right">
+                <lightning-layout-item flexibility="auto">
+                  <div class="slds-media__body">
+                    <ul class="slds-list_horizontal slds-wrap ">
+                      <li class="slds-item_label slds-text-color_weak ">
+                        <div class="wrapped-content" title="Field 4">Opportunity Name:</div>
+                      </li>
+                      <li class="slds-item_label slds-text-color_weak ">
+                        <div class="wrapped-content" title="Description (2-line truncation—must use JS to truncate).">
+                          Opportunity Name - ABC</div>
+                      </li>
+                    </ul>
+                    <ul class="slds-list_horizontal slds-wrap">
+                      <li class="slds-item_label slds-text-color_weak ">
+                        <div class="wrapped-content" title="Field 4">Opportunity Project:</div>
+                      </li>
+                      <li class="slds-item_label slds-text-color_weak ">
+                        <div class="wrapped-content" title="Description (2-line truncation—must use JS to truncate).">
+                          Opportunity Project - ABC</div>
+                      </li>
+                    </ul>
+                    <ul class="slds-list_horizontal slds-wrap">
+                      <li class="slds-item_label slds-text-color_weak ">
+                        <div class="wrapped-content" title="Field 4">Opportunity Stage:</div>
+                      </li>
+                      <li class="slds-item_label slds-text-color_weak ">
+                        <div class="wrapped-content" title="Description (2-line truncation—must use JS to truncate).">
+                          Opportunity Project - ABC</div>
+                      </li>
+                    </ul>
+                    <ul class="slds-list_horizontal slds-wrap">
+                      <li class="slds-item_label slds-text-color_weak ">
+                        <div class="wrapped-content" title="Field 4">Quote:</div>
+                      </li>
+                      <li class="slds-item_label slds-text-color_weak ">
+                        <div class="wrapped-content" title="Description (2-line truncation—must use JS to truncate).">
+                          Opportunity Project - ABC</div>
+                      </li>
+                    </ul>
 
 
+                  </div>
+                </lightning-layout-item>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </lightning-layout>
+
     </div>
   </div>
 
@@ -197,4 +184,3 @@
   </div>
 </div> -->
 </template>
-
